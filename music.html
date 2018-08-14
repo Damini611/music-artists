@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<!-- Student Name: Damini Singh(1001408915)   -->
+<html lang="en">
+  <head>
+    <title>A Music Web Application</title> 
+    <meta charset="utf-8"/>
+    <script type="text/javascript" src="music.js"></script>	
+  </head>
+  
+  <body onload="initialize();">
+    <form style="margin-top: 75px;margin-left: 275px">
+       <label style="color:Blue;font-weight: bold">Artist Name: <input type="text" id="form-input"/></label>
+       <input type="button" onclick="sendRequest();" value="Display Info about artist"/>
+    </form>
+	
+    <div class = "left" id="output"></div>
+	<div class = "mid" id="outputalbum"> </div> 
+	<div class = "right" id="similaroutput"></div>
+	<div class = "imagename" id="imagename"></div>
+	<div class = "wrap" id="summary"></div>
+	<div class = "link" id="link"></div>
+	<div class = "title1" id="title1"></div>
+	<div class = "title2" id="title2"></div>
+	<table border = "1" class = "table" id = "table"> </table>
+	
+	<style>
+	
+			
+			body {
+					background-image: url("download.png");
+					background-repeat: no-repeat;
+					background-size: 1000px 1000px;					
+				}
+						
+			.right {
+					position: absolute;
+					top : 220px;
+					right: 50px;					
+					color:Blue;
+					font-weight: bold;					
+					word-wrap:break-word;
+					font-size: 18px;
+					
+					
+					}
+					
+			.mid   {
+					position: absolute;
+					top : 230px;
+					left: 420px;
+					width: 300px;
+					color:Blue;
+					font-weight: bold;
+					font-size: 12px;
+				   }
+				   
+				   
+			.left   {
+					position: absolute;
+					top : 250px;
+					left: 10px;
+					width: 300px;
+				   }	  
+			
+			.imagename   {
+					position: absolute;
+					top : 100px;
+					left: 10px;
+					width: 300px;					
+					font: italic bold 20px/30px Georgia, serif;
+					text-decoration: underline;
+					color:Blue  ;
+				   }	
+
+			.link		{
+					position: absolute;
+					top : 230px;
+					left: 10px;	
+					font-weight: bold;					
+						}
+						
+			.wrap		{
+					position: absolute;
+					top : 140px;
+					left: 10px;					
+					color:Blue;
+					font-weight: bold;
+					word-wrap:break-word;
+					font-size: 18px;
+											
+						}
+						
+			.title1		{
+						position: absolute;
+						top : 230px;
+						left: 420px;				
+						color:Blue;
+						font-weight: bold;
+						text-decoration: underline;
+						font-size: 20px;
+						
+						}
+						
+			.title2		{
+							position: absolute;
+							top : 220px;
+							right: 100px;					
+							color:Blue;
+							font-weight: bold;
+							text-decoration: underline;
+							font-size: 20px;
+						
+						}
+		   	
+			.table		{
+			
+						position: absolute;
+						top : 260px;
+						left: 420px;
+						color:Blue;
+						font-weight: bold;
+						font-size: 18px;
+						word-wrap:break-word;
+						
+						}
+			
+	</style>
+	
+  </body>
+</html>
